@@ -6,7 +6,7 @@ require('dotenv').config({ path: '.env.local' });
 
 module.exports = (env, argv) => ({
   entry: './src/main.jsx',
-  output: { path: path.resolve(__dirname, 'dist'), filename: '[name].[contenthash].js', clean: true, publicPath: '/' },
+  output: { path: path.resolve(__dirname, 'dist'), filename: '[name].[contenthash].js', clean: true, publicPath: argv.mode === 'production' ? '/astrovitals-system/' : '/', },
   resolve: { extensions: ['.js', '.jsx'] },
   module: { rules: [
     { test: /\.jsx?$/, exclude: /node_modules/, use: 'babel-loader' },

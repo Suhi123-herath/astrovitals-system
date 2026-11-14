@@ -90,7 +90,7 @@ export default function App({ onLogout, profile }) {
       <Alerts alerts={ev.alerts} env={env} hasData={hasData} />
       <Charts rows={rows} />
       <ResearchPanel />
-      <footer>AstroVitals • NASA Space Apps 2026 prototype. Research sources provide scientific context; this prototype does not diagnose or replace flight-surgeon guidance. Numeric demonstration bands are illustrative, not NASA-approved medical thresholds.</footer>
+      <footer>AstroVitals • NASA Space Apps 2026 prototype.-Nayanadini Herath & Oriole_yellow team-git add . Research sources provide scientific context; this prototype does not diagnose or replace flight-surgeon guidance. Numeric demonstration bands are illustrative, not NASA-approved medical thresholds.</footer>
     </main>
   </>;
 }

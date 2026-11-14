@@ -2,7 +2,10 @@
   "name": "astrovitals-frontend",
   "private": true,
   "version": "0.2.1",
-  "scripts": {
+  "homepage": "https://Suhi123-herath.github.io/astrovitals-system",
+    "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack serve --mode development --open",
     "build": "webpack --mode production"
   },
