@@ -1642,7 +1642,7 @@ footer{color:#8496b1;font-size:.8rem;text-align:center;padding:1rem;border-top:1
 
   100% {
     opacity: .5;
-    filter: brightness(3);
+    filter: brightness(2);
   }
 }
 
