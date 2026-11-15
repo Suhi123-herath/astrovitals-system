@@ -1,4 +1,4 @@
-# Astrovitals-system 
+# AstroVitals-system 
 
 ## 🚀 Live Demo
 **AstroVitals – Live Frontend:**  
