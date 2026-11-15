@@ -7,6 +7,9 @@
 ## 👥 Team
 
 **Team Name:** Oriole_yellow
+   **Team Members:**
+- Member 1 – Nayanadini Herath
+- Member 2 – H.M.P.V.B.Herath
 
 AstroVitals is a health-monitoring prototype created for the NASA Space Apps 2026 challenge. It helps astronauts keep track of their physical and mental wellbeing, record symptoms, and monitor health changes over time. It also provides alerts and helpful guidance based on recorded information and space-health research.
 
