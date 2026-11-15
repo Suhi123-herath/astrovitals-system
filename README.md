@@ -1,11 +1,14 @@
-# Astrovitals-system
-## 🚀 Live Demo
+# Astrovitals-system 
 
+## 🚀 Live Demo
 **AstroVitals – Live Frontend:**  
 [Open AstroVitals](https://suhi123-herath.github.io/astrovitals-system/)
 
+## 👥 Team
 
-Mission-aware astronaut health monitoring prototype for the NASA Space Apps 2026 challenge. AstroVitals combines personal physiological check-ins, psychological wellbeing, reported symptoms, environmental observations, mission context, and traceable space-agency research to identify concerning changes and suggest appropriate next steps.
+**Team Name:** Oriole_yellow
+
+AstroVitals is a health-monitoring prototype created for the NASA Space Apps 2026 challenge. It helps astronauts keep track of their physical and mental wellbeing, record symptoms, and monitor health changes over time. It also provides alerts and helpful guidance based on recorded information and space-health research.
 
 > **Prototype / hackathon notice:**  AstroVitals is a demo prototype. Health thresholds are illustrative, not NASA-approved, and sign-in is for demonstration only.
 
