@@ -1,6 +1,6 @@
 # Astrovitals-system
 
-# astroVitals frontend
+# AstroVitals frontend
 
 React + Webpack frontend for the NASA Space Apps 2026 challenge **Create Health Monitoring Software for Astronauts on Space Missions**.
 
