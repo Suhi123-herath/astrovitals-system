@@ -1,5 +1,8 @@
 # Astrovitals-system
+## 🚀 Live Demo
 
+**AstroVitals – Live Frontend:**  
+[[Open AstroVitals](https://your-frontend-link.com](https://suhi123-herath.github.io/astrovitals-system/))
 
 
 Mission-aware astronaut health monitoring prototype for the NASA Space Apps 2026 challenge. AstroVitals combines personal physiological check-ins, psychological wellbeing, reported symptoms, environmental observations, mission context, and traceable space-agency research to identify concerning changes and suggest appropriate next steps.
@@ -87,9 +90,6 @@ Evidence links:
 
 **Research-data guardrail:** NASA research-cohort measurements are presented as evidence context only. They are not merged into an astronaut's personal trend chart.
 
-## Before a real deployment
-
-Implement real identity/authentication, role-based access, per-astronaut authorization, encryption, audit logging, sensor validation, data-retention controls, and flight-surgeon-approved clinical thresholds. Replace the demo astronaut ID and browser-only authentication. Validate every numeric threshold with the challenge's authoritative resources and medical/mission protocols.
 
 ## API payload
 
