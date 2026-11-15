@@ -8,7 +8,6 @@
 
 
 
-
 .mission-header {
   display: flex;
   align-items: center;
@@ -1461,4 +1460,195 @@ footer{color:#8496b1;font-size:.8rem;text-align:center;padding:1rem;border-top:1
 /* Pause floating when hovering */
 #alerts .alert:hover {
   animation-play-state: paused;
+}
+
+
+
+
+/* =========================================
+   ASTROVITALS — CINEMATIC CONSTELLATION
+   Cassiopeia + Twinkling Background Stars
+========================================= */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Keep dashboard content above the background */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* -----------------------------------------
+   BACKGROUND STARFIELD
+   Small stars twinkle continuously
+----------------------------------------- */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #a9d9ff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1.5px, transparent 2.5px),
+    radial-gradient(circle, #83bfff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #c9e6ff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1.5px, transparent 2.5px),
+    radial-gradient(circle, #9bcfff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #b9dcff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1.5px, transparent 2.5px),
+    radial-gradient(circle, #8abfff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #d5ecff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1.5px, transparent 2.5px),
+    radial-gradient(circle, #a9d9ff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #b9dcff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1.5px, transparent 2.5px),
+    radial-gradient(circle, #8abfff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #d5ecff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1px, transparent 2px),
+    radial-gradient(circle, #a9d9ff 1px, transparent 2px),
+    radial-gradient(circle, #fff 1.5px, transparent 2.5px),
+    radial-gradient(circle, #fff 1px, transparent 2px);
+
+  background-size:
+    113px 127px, 157px 139px, 193px 173px,
+    137px 181px, 211px 149px, 173px 197px,
+    227px 163px, 149px 211px, 181px 157px,
+    239px 193px, 167px 223px, 199px 137px,
+    131px 229px, 223px 179px, 191px 239px,
+    251px 151px, 179px 233px, 149px 167px,
+    227px 211px, 163px 191px, 241px 173px,
+    197px 251px, 151px 197px, 233px 157px,
+    181px 227px, 257px 181px, 139px 241px,
+    211px 199px, 173px 251px, 263px 167px;
+
+  background-position:
+    10px 15px, 45px 70px, 90px 20px,
+    120px 100px, 180px 45px, 220px 130px,
+    280px 25px, 330px 85px, 390px 145px,
+    430px 35px, 490px 110px, 540px 15px,
+    590px 90px, 650px 40px, 700px 130px,
+    750px 25px, 800px 85px, 850px 150px,
+    900px 35px, 950px 110px, 1000px 55px,
+    1050px 140px, 1100px 15px, 1150px 100px,
+    1200px 45px, 1250px 130px, 1300px 25px,
+    1350px 90px, 1400px 40px, 1450px 120px;
+
+  background-repeat: repeat;
+  opacity: .85;
+
+  animation: astroBackgroundTwinkle 5s ease-in-out infinite alternate;
+}
+
+/* -----------------------------------------
+   CASSIOPEIA CONSTELLATION
+   Permanent connected main stars
+----------------------------------------- */
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  background-image:
+
+    /* Nebula glow */
+    radial-gradient(
+      ellipse at 35% 48%,
+      rgba(32, 111, 205, .20),
+      transparent 48%
+    ),
+
+    radial-gradient(
+      ellipse at 75% 35%,
+      rgba(100, 65, 195, .13),
+      transparent 42%
+    ),
+
+    /* Soft diagonal light beams */
+    linear-gradient(
+      115deg,
+      transparent 35%,
+      rgba(110, 180, 255, .09) 44%,
+      rgba(170, 220, 255, .18) 45%,
+      transparent 48%
+    ),
+
+    linear-gradient(
+      70deg,
+      transparent 58%,
+      rgba(75, 145, 255, .10) 64%,
+      transparent 70%
+    ),
+
+    /* Cassiopeia: five permanent bright stars */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3Cfilter id='g'%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M100 170 L245 320 L385 130 L535 320 L700 185' fill='none' stroke='%238ccfff' stroke-width='2.5' stroke-opacity='.85'/%3E%3Cpath d='M100 170 L245 320 L385 130 L535 320 L700 185' fill='none' stroke='%23a9dcff' stroke-width='9' stroke-opacity='.3' filter='url(%23g)'/%3E%3Cg fill='%23b8e4ff' filter='url(%23g)'%3E%3Ccircle cx='100' cy='170' r='15'/%3E%3Ccircle cx='245' cy='320' r='15'/%3E%3Ccircle cx='385' cy='130' r='17'/%3E%3Ccircle cx='535' cy='320' r='15'/%3E%3Ccircle cx='700' cy='185' r='16'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='100' cy='170' r='7'/%3E%3Ccircle cx='245' cy='320' r='7'/%3E%3Ccircle cx='385' cy='130' r='9'/%3E%3Ccircle cx='535' cy='320' r='7'/%3E%3Ccircle cx='700' cy='185' r='8'/%3E%3C/g%3E%3Cg stroke='%23d5efff' stroke-width='2' opacity='.85'%3E%3Cpath d='M100 153 V187 M83 170 H117 M385 108 V152 M363 130 H407 M700 166 V204 M681 185 H719'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    min(65%, 800px) auto;
+
+  background-position:
+    center,
+    center,
+    center,
+    center,
+    left 115%;
+
+  opacity: 0.88;
+}
+
+/* -----------------------------------------
+   ANIMATION — ONLY BACKGROUND STARS
+----------------------------------------- */
+
+@keyframes astroBackgroundTwinkle {
+  0% {
+    opacity: .48;
+    filter: brightness(.8);
+  }
+
+  50% {
+    opacity: .85;
+    filter: brightness(1.35);
+  }
+
+  100% {
+    opacity: .5;
+    filter: brightness(3);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+  }
 }
