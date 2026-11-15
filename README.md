@@ -7,7 +7,7 @@
 
 Mission-aware astronaut health monitoring prototype for the NASA Space Apps 2026 challenge. AstroVitals combines personal physiological check-ins, psychological wellbeing, reported symptoms, environmental observations, mission context, and traceable space-agency research to identify concerning changes and suggest appropriate next steps.
 
-> **Prototype / hackathon notice:** This is not a medical device, diagnostic system, flight-certified tool, or replacement for mission medical procedures. Numeric bands in the demonstration engine are illustrative and are not NASA-approved astronaut thresholds. The demo sign-in is browser-only and is not production authentication.
+> **Prototype / hackathon notice:**  AstroVitals is a demo prototype. Health thresholds are illustrative, not NASA-approved, and sign-in is for demonstration only.
 
 ## Architecture
 
@@ -94,3 +94,5 @@ Evidence links:
 ## API payload
 
 The backend accepts the original required daily measurements plus optional context fields: `stress`, `spo2`, `hydrationMl`, `missionEnvironment`, `missionPhase`, `activityContext`, `glucoseContext`, `symptoms`, `radiationDoseUsv`, `cabinCo2Ppm`, `cabinTemperatureC`, `environmentAlarm` and `exposureSource`.
+AI Tools Used: AI-assisted development tools for coding support, debugging, research, and content refinement. The team reviewed and adapted the suggestions before incorporating them into the project.
+
